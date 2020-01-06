@@ -1,5 +1,5 @@
 var fs = require('fs');
-// 1.查看服务器上是否有upload目录，没有创建upload目录     实际应用:图片上传
+// 1.查看服务器上是否有upload目录，没有，创建upload目录     实际应用:图片上传
 fs.readdir('upload',(error)=>{
     if(error){  //no such file or directory  没有upload目录
         fs.mkdir('upload',(err)=>{
