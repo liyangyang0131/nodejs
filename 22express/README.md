@@ -61,7 +61,7 @@ var cookieParser = require('cookie-parser');
 app.use(cookieParser('123456'));  // 任意字符串
 2.设置 cookie 的时候配置 signed 属性
 res.cookie('userinfo','hahaha',{domain:'.ccc.com',maxAge:900000,httpOnly:true,signed:true});
-3. signedCookies 调用设置的 cookie
+3.signedCookies 调用设置的 cookie
 console.log(req.signedCookies);
 
 
